@@ -5,32 +5,35 @@
 	<meta charset="utf-8"/>
 		<title>Northside Youth Soccer League</title>
 		<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
-		<link rel="stylesheet" type="text/css" href="styles/nysl_1.css">
+		<link rel="stylesheet" type="text/css" href="styles/nysl_2.css">
 	</head>
 	<body>
-		<header id="top">
-			<p>Northside Youth Soccer League</p>
+		<header>
+			<p id="title" >Northside Youth Soccer League</p>
 		</header>
-		<img id="logo" alt="NYSL's logo." src="imgs/logo.png" w>
+		<img id="logo" alt="NYSL's logo." src="imgs/logo.png">
 		<h2>Upcoming Events</h2>
-		<nav> 
-			<a href="index.html">Home</a> 
-			<a href="about.html">About NYSL</a> 
-			<a href="contact.html">Contact</a>
-		</nav>
-		<section id="home">
-			<article>
-				<p>August 4</p>
-				<p>	NYSL Fundraiser</p>
-			</article>
-			<article>
-				<p>August 16</p>
-				<p>Season Kick-off: Meet the Teams</p>
-			</article>
-			<article>
-				<p>September 1</p>
-				<p>First Game of the Season (Check Game Schedule for details)</p>
-			</article>
-		</section>
+		<div style="overflow: auto"> <!-- A causa de que el float del nav y del main sobrepasaban espacio en el body -->
+			<nav> 
+				<a href="index.html" class="current" >Home</a> 
+				<a href="about.html">About NYSL</a> 
+				<a href="contact.html">Contact</a>
+			</nav>
+			<main> <!-- Tenía un section, pero por el formato de la pág no tengo un subtitulo para utilizar (el p podría ser h6...) -->
+				<article>
+					<h5>August 4</h5> <!-- Al usar article/section es necesario utilizar subtítulos -->
+					<p class="indent">NYSL Fundraiser</p>
+				</article>
+				<article>
+					<h5>August 16</h5>
+					<p class="indent" >Season Kick-off: Meet the Teams</p>
+				</article>
+				<article>
+					<h5>September 1</h5>
+					<p class="indent">First Game of the Season (Check Game Schedule for details)</p>
+				</article>
+			</main>
+		</div>
+		
 	</body>
 </html>

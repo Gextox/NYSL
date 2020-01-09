@@ -1,0 +1,66 @@
+header
+{
+	margin-top: 6vw; 
+	background-image: url("../imgs/img1.jpg");
+	padding: 25vh 0vw;
+	background-size: cover;
+	background-position: 20% 20%;
+}
+
+#title
+{
+	position: absolute;
+	top: -10%;
+	font-family: Candara;
+	font-size: 5vw;
+
+}
+
+#logo{
+	position: absolute;
+	top: calc(25% * 2 - 25px);
+	right: 20%; /* para posición es mejor % o vw/vh ? */
+	width: 10vw;
+}
+
+h2
+{
+	border: solid;
+	text-align: center;
+	font-size: 3vw; /* se ve muy grande en mobile? */
+	font-family: Candara;
+	margin: 0;
+}
+
+nav
+{
+	position: absolute;
+	top: 11%;
+	right: 5%;
+	color: #4682B4;
+	float: left;
+	 /*width: 20vw;*/
+}
+
+nav>a
+{
+	right: 2%;
+}
+
+a:link, a:visited
+{
+	background: #000099;
+	color: white;
+	border: solid;
+	border-color: black;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.99);
+	text-decoration: none;
+	font-family: Candara;
+	padding: 0px 5px;
+
+}
+
+.current
+{
+	background: green !important; /*text decoration none me anula el subrayado en a-link*/	
+}

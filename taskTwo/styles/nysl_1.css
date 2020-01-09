@@ -1,24 +1,36 @@
-#top
+					/*INDEX*/
+
+header
 {
-	margin-top: 10%; /* por qué no funciona con vh vw? */
+	/*margin-top: 10vw;  por qué no funciona con vh vw? */
 	background-image: url("../imgs/img1.jpg");
 	padding: 25vh 0vw;
 	background-size: cover;
-	background-position: top; /* no funcionó con coordenadas (background-position: top), si sirve es responsive? o pasa cono con px */
+	background-position: 20% 20%; /* no funcionó con coordenadas (background-position: top), si sirve es responsive? o pasa cono con px */
+}
+
+#title
+{
+	position: absolute;
+	top: 0%;
+	font-family: Candara;
+	font-size: 5vw;
+
 }
 
 #logo{
 	position: absolute;
-	top: 72%;
+	top: calc(25% * 2 - 25px);
 	right: 20%; /* para posición es mejor % o vw/vh ? */
 	width: 10vw;
 }
 
-h2{
+h2
+{
 	background: black;
 	color: white;
 	text-align: center;
-	font-size: 40px; /* se ve muy grande en mobile? */
+	font-size: 3vw; /* se ve muy grande en mobile? */
 	font-family: Candara;
 	margin: 0;
 }
@@ -29,23 +41,65 @@ nav
 	display: block;
 	 color: #4682B4;
 	 float: left;
+	 /*width: 20vw;*/
 }
 
 nav>a
 {
 	display: block;
-	margin-top: 50%;
-	margin-bottom: 50%;
+	margin-top: 26%;
+	margin-bottom: 38%;
+}
+
+a:link, a:visited
+{
+	color: #4682B4;
+	text-decoration: none;
+	font-family: Candara;
+
+}
+
+.current
+{
+	text-decoration: underline !important; /*text decoration none me anula el subrayado en a-link*/
+	font-weight: bold;
 }
 
 
-#home
+main
 {
-	margin-left: 10%;
+	margin-left: 7%;
 	float: left;
 }
 
-#home p
+main p, h5
 {
+	font-family: Candara;
+	font-weight: normal;
 	margin: 0;
+	font-size: 1em;
+}
+
+.indent
+{
+	text-indent: 2em;
+}
+
+article
+{
+	margin-top: 3%;
+	width: 70vw;
+}
+
+								/*ABOUT*/
+.subtitle
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+								/*CONTACT*/
+.mail
+{
+	text-decoration: underline !important
 }
