@@ -1,0 +1,122 @@
+													/*INDEX*/
+:root
+{
+	--logoSize: 8em;
+	--borderSize: 0.1em;
+	--backgroundColor: #1c1c1c;
+}
+
+body{
+	margin: 0;
+}
+
+#bodyBackground
+{
+	overflow: auto; /*al usar position absolute, "arregla" elementos que salen fuera del box*/
+	height: 100vh;
+	margin: 0px;
+	background-image: url("../imgs/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#logo
+{
+	position: absolute;
+	top: 0.5em;
+	left: 7.3em;
+	height: var(--logoSize);
+}
+
+#title
+{
+	margin-top: 7.3em;
+	margin-left: 1em;
+	font-size: 1.2em;
+}
+
+h2
+{
+	background: #1c1c1c;
+	text-align: center;
+
+	font-size: 4vw; /* se ve muy grande en mobile? */
+	margin-top: 0em;
+	-webkit-border-radius: 79px 79px 79px 79px;
+	border: var(--borderSize) solid #ffffff;
+	width: calc(100vw - var(--borderSize) * 2);
+}
+
+nav
+{
+	position: absolute;
+	font-size: 3vw; /* se ve muy grande en mobile? */
+	top: 1.5em;
+	right: 8em;
+}
+
+nav>a
+{
+	margin-left: 1.0em;
+}
+
+nav>a:hover
+{
+	color: #A6FF2A;
+}
+
+a:link, a:visited
+{
+	text-decoration: none;
+
+}
+
+.textFormat
+{
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-transform: uppercase;
+	text-shadow: 2px 0 0 #000;
+}
+
+main
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+main>article
+{
+	width: 30vw;
+	margin: 0.6em 4em;
+	background-color: var(--backgroundColor);
+	padding: -4em -4em;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: var(--borderSize) solid #ffffff;
+}
+
+article>h5, article>p
+{
+	margin: 1em;
+}
+
+.subtitles
+{
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 2.2em;
+	text-align: center;
+
+}
+
+.innerText
+{
+	font-size: 1.5em;
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-align: center;
+}
+
+

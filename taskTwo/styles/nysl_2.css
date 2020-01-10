@@ -10,17 +10,10 @@ header
 #title
 {
 	position: absolute;
-	top: -10%;
+	top: -11%;
 	font-family: Candara;
 	font-size: 5vw;
 
-}
-
-#logo{
-	position: absolute;
-	top: calc(25% * 2 - 25px);
-	right: 20%; /* para posición es mejor % o vw/vh ? */
-	width: 10vw;
 }
 
 h2
@@ -30,6 +23,16 @@ h2
 	font-size: 3vw; /* se ve muy grande en mobile? */
 	font-family: Candara;
 	margin: 0;
+}
+
+#logo
+{
+	/*position: absolute;*/
+	/*top: calc(25% * 2 - 25px);*/
+	right: 20%; /* para posición es mejor % o vw/vh ? */
+	margin-top: 1%;
+	width: 10vw;
+	float: left;
 }
 
 nav
@@ -47,7 +50,7 @@ nav>a
 	right: 2%;
 }
 
-a:link, a:visited
+nav>a:link, nav>a:visited /*solo a hijos de nav, sino aplica al link y hay que usar !important*/
 {
 	background: #000099;
 	color: white;
@@ -57,10 +60,62 @@ a:link, a:visited
 	text-decoration: none;
 	font-family: Candara;
 	padding: 0px 5px;
-
+	margin-left: 15px;
 }
 
 .current
 {
 	background: green !important; /*text decoration none me anula el subrayado en a-link*/	
+}
+
+main
+{
+	margin-left: 7%;
+	float: left;
+}
+
+main p, h5
+{
+	font-family: Candara;
+	font-weight: normal;
+	margin: 0;
+	font-size: 1em;
+}
+
+.innerText
+{
+	text-indent: 2em;
+}
+
+article
+{
+	margin-top: 3%;
+	width: 70vw;
+}
+
+								/*ABOUT*/
+.subtitle
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+								/*CONTACT*/
+
+.mail
+{
+	text-decoration: underline;
+	font-weight: bold;
+	color: #4682B4;
+}
+
+/*PARCHAZO    No respeta resolución - Tendría que crear 2 h2 y display:none ?	*/ 
+
+#patch
+{
+	position: absolute;
+	background-color: white;
+	padding: 1.3em 6em;
+	right: 34vw;
+	top: 63vh;
 }
