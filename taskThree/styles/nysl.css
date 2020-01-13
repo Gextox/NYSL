@@ -1,0 +1,223 @@
+													/*INDEX*/
+:root
+{
+	--logoSize: 8em;
+	--borderSize: 0.1em;
+	--backgroundColor: #1c1c1c;
+	--fontColor: #A6FF2A;
+}
+
+body
+{
+	margin: 0;
+}
+
+#bodyBackground
+{
+	overflow: auto; /*al usar position absolute, "arregla" elementos que salen fuera del box*/
+	height: 100vh;
+	margin: 0px;
+	background-image: url("../imgs/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#logo
+{
+	position: absolute;
+	top: 0.5em;
+	left: 7.3em;
+	height: var(--logoSize);
+}
+
+#title
+{
+	margin-top: 7.3em;
+	margin-left: 1em;
+	font-size: 1.2em;
+}
+
+h2
+{
+	background: #1c1c1c;
+	text-align: center;
+
+	font-size: 4vw; /* se ve muy grande en mobile? */
+	margin: 0em;
+	-webkit-border-radius: 79px 79px 79px 79px;
+	border: var(--borderSize) solid #ffffff;
+	width: calc(100vw - var(--borderSize) * 2);
+}
+
+nav
+{
+	position: absolute;
+	font-size: 2vw; /* se ve muy grande en mobile? */
+	top: 2em;
+	right: 10em;
+}
+
+nav>a
+{
+	margin-left: 1.0em;
+}
+
+nav>a:hover
+{
+	color: var(--fontColor);
+}
+
+a:link, a:visited
+{
+	text-decoration: none;
+
+}
+
+.textFormat
+{
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-transform: uppercase;
+	text-shadow: 2px 0 0 #000;
+}
+
+main
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+main>article
+{
+	width: 30vw;
+	margin: 0.6em 4em;
+	background-color: var(--backgroundColor);
+	padding: -4em -4em;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: var(--borderSize) solid #ffffff;
+}
+
+article>h5, article>p
+{
+	margin: 1em;
+}
+
+.subtitles
+{
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 2.2em;
+	text-align: center;
+
+}
+
+.innerText
+{
+	font-size: 1.5em;
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-align: center;
+}
+
+
+								/*CONTACT*/
+.mail
+{
+	color: var(--fontColor);
+}
+
+								/*RULES*/
+
+li
+{
+		/*width: 30vw;*/
+	margin: 0.6em 4em;
+	background-color: var(--backgroundColor);
+	padding: 1em 1em;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: var(--borderSize) solid #ffffff;
+
+	font-size: 1.2em;
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-align: justify;
+	text-indent: 2em;
+}
+
+dl
+{
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 2.2em;
+	text-align: center;
+	/*mismo estilo que clase subtitles, puedo asignar una clase a una etiqueta?*/
+	display: block;
+}
+
+
+li
+{
+	font-size: 1em;
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-align: left;
+	text-indent: 2em;
+}
+
+#desc
+{
+	display: block;
+}
+
+#rulesMain
+{
+	display: block;
+}
+
+
+										/*Info*/
+
+#infoMain
+{
+	display: flex;
+	flex-direction: column;
+	/*width: 100%;*/
+	/*display: block;*/
+	/*padding: 0px 50px;*/
+	/*width: 10vw;*/
+}
+
+th
+{
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 2em;
+	text-align: center;
+
+}
+
+td
+{
+	font-size: 1em;
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-align: center;
+}
+
+table
+{
+	margin: 2vw 10vw;
+	width: 80vw;
+}
+
+th, td
+{
+	width: 20vw;
+}
+
+/*#infoMain td*/
+/*{*/
+	/*height: 10px;*/
+/*}*/
