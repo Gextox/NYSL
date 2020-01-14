@@ -1,11 +1,17 @@
 													/*INDEX*/
 :root
 {
-	--logoSize: 8em;
+	--logoSize: 12vh;
+	--logoMarginLeft: 7vw;
+	--logoMarginTop: 2vh;
 	--borderSize: 0.1em;
+	--borderColor: #efefef;
 	--backgroundColor: #1c1c1c;
 	--fontColor: #A6FF2A;
+	--bannerHeight: 18vh;
 }
+
+
 
 body
 {
@@ -15,47 +21,66 @@ body
 #bodyBackground
 {
 	overflow: auto; /*al usar position absolute, "arregla" elementos que salen fuera del box*/
-	height: 100vh;
-	margin: 0px;
+		height: 100vh;
+
+		margin: 0px;
+		
 	background-image: url("../imgs/background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
 }
 
+#banner
+{
+	position: absolute;
+	opacity: 0.9;
+	width: 100%;
+	height: var(--bannerHeight);
+	top: 0;
+	background-color: var(--backgroundColor);
+}
+
 #logo
 {
 	position: absolute;
-	top: 0.5em;
-	left: 7.3em;
+	left: var(--logoMarginLeft);
+	top: var(--logoMarginTop);
 	height: var(--logoSize);
+	z-index: 10;
 }
 
 #title
 {
-	margin-top: 7.3em;
-	margin-left: 1em;
-	font-size: 1.2em;
+	position: absolute;
+	top: calc(var(--logoSize) + var(--logoMarginTop));
+	font-size: 0.6em;
+	z-index: 10;
+	margin-left: calc(var(--logoMarginLeft)/2);
 }
 
 h2
 {
 	background: #1c1c1c;
 	text-align: center;
-
 	font-size: 4vw; /* se ve muy grande en mobile? */
 	margin: 0em;
 	-webkit-border-radius: 79px 79px 79px 79px;
-	border: var(--borderSize) solid #ffffff;
-	width: calc(100vw - var(--borderSize) * 2);
+	border: var(--borderSize) solid var(--borderColor);
+	
+	margin-top: var(--bannerHeight);
+	margin-bottom: 2vh;
 }
 
 nav
 {
 	position: absolute;
 	font-size: 2vw; /* se ve muy grande en mobile? */
-	top: 2em;
-	right: 10em;
+	/*top: calc( var(--logoMarginTop) / 2);*/
+	top: 7vh;
+	left: calc( var(--logoMarginLeft) * 3);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 nav>a
@@ -86,17 +111,19 @@ main
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+	
+	
 }
 
 main>article
 {
-	width: 30vw;
+	width: 100vw;
 	margin: 0.6em 4em;
 	background-color: var(--backgroundColor);
-	padding: -4em -4em;
 	-webkit-border-radius: 20px 20px 20px 20px;
-	border: var(--borderSize) solid #ffffff;
+	border: var(--borderSize) solid var(--borderColor);
 }
 
 article>h5, article>p
@@ -121,11 +148,31 @@ article>h5, article>p
 	text-align: center;
 }
 
+#aboutMain
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#aboutMain article
+{
+	width: 80%;	
+	margin: 1.5em 4em;
+	background-color: var(--backgroundColor);
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: var(--borderSize) solid var(--borderColor);
+
+}
+
 
 								/*CONTACT*/
 .mail
 {
 	color: var(--fontColor);
+	text-shadow: 2px 0 0 #000;
 }
 
 								/*RULES*/
@@ -133,38 +180,22 @@ article>h5, article>p
 li
 {
 		/*width: 30vw;*/
-	margin: 0.6em 4em;
-	background-color: var(--backgroundColor);
+	margin: 1.5em 4em;
 	padding: 1em 1em;
+	background-color: var(--backgroundColor);
 	-webkit-border-radius: 20px 20px 20px 20px;
-	border: var(--borderSize) solid #ffffff;
-
-	font-size: 1.2em;
-	color: white;
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	text-align: justify;
-	text-indent: 2em;
-}
-
-dl
-{
-	color: white;
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 2.2em;
-	text-align: center;
-	/*mismo estilo que clase subtitles, puedo asignar una clase a una etiqueta?*/
-	display: block;
-}
-
-
-li
-{
+	border: var(--borderSize) solid var(--borderColor);
 	font-size: 1em;
 	color: white;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	text-align: left;
 	text-indent: 2em;
 }
+
+ol, ul
+{
+	list-style-position: inside;
+}
+
 
 #desc
 {
@@ -174,10 +205,39 @@ li
 #rulesMain
 {
 	display: block;
+
 }
 
+#rulesMain p
+{
+	color: white;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 2.2em;
+	font-weight: bold;
+	text-align: center;
+	margin: 1vh 0;
+}
+
+.orderedListLower
+{
+	list-style-type: lower-alpha;
+
+}
+
+.orderedListSquare
+{
+	list-style-type: square;
+
+
+
+}
 
 										/*Info*/
+
+h3
+{
+	margin-top: 0;
+}
 
 #infoMain
 {
@@ -204,6 +264,7 @@ td
 	color: white;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	text-align: center;
+	margin: 0.1vh;
 }
 
 table
@@ -215,9 +276,7 @@ table
 th, td
 {
 	width: 20vw;
+	text-shadow: 2px 0 0 #000;
 }
 
-/*#infoMain td*/
-/*{*/
-	/*height: 10px;*/
-/*}*/
+
