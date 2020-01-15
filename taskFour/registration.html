@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+		<title>Northside Youth Soccer League</title>
+		<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+		<link rel="stylesheet" type="text/css" href="styles/nysl.css">
+	</head>
+	<body>
+		<div id="bodyBackground">
+			<header>
+				<div id="banner"></div>
+				<p id="title" class="textFormat" >Northside Youth Soccer League</p>
+				<img id="logo" alt="NYSL's logo." src="imgs/logo.png">
+				<nav>
+					<a href="index.html" class="textFormat current">Home</a> 
+					<a href="about.html" class="textFormat">About NYSL</a>
+					<a href="info.html" class="textFormat">Information</a>
+					<a href="rules.html" class="textFormat">Rules</a>
+					<a href="registration.html" class="textFormat">Registration</a>
+					<a href="contact.html" class="textFormat">Contact</a>
+				</nav>
+			</header>
+			<h2 class="textFormat">Registration Form</h2>
+			<div style="overflow: auto"> <!-- A causa de que el float del nav y del main sobrepasaban espacio en el body -->
+				<main #mainRegistration> <!-- Tenía un section, pero por el formato de la pág no tengo un subtitulo para utilizar (el p podría ser h6...) -->
+					<form>
+						<fieldset>
+							<legend class="subtitles">Personal Data</legend>
+							<div>
+								<label>
+									Player’s First Name:<input type="text" name="firstName" placeholder="Enter your name">
+								</label>
+								<label>
+									Last Name:<input type="text" name="lastName" placeholder="Enter your last name">
+								</label>
+							</div>
+							<div>
+								<label>
+										Street Adress:<input type="text" name="adress" placeholder="Enter the adress where you're living actually">
+										City:<input type="text" name="city" placeholder="Enter the city where you're living actually">
+										Zip Code:<input type="number" name="zipCode" placeholder="Enter the corresponding zip code">
+								</label>
+							</div>
+							<div>
+								<label>
+									Birth Date:<input type="date" name="birthDate" placeholder="mm/dd/yy">
+								</label>
+								<label>
+									Gender:<input type="radio" name="gender"><p>Male</p> <input type="radio" name="gender"><p>Female</p>
+								</label>
+							</div>
+							<label>
+								Grade:
+								<input type="radio" name="grade"><p>Pre-School</p>
+								<input type="radio" name="grade"><p>1ˢᵗ</p>
+								<input type="radio" name="grade"><p>2ⁿᵈ</p>
+								<input type="radio" name="grade"><p>3ʳᵈ</p>
+								<input type="radio" name="grade"><p>4ᵗʰ</p>
+								<input type="radio" name="grade"><p>5ᵗʰ</p>
+							</label>
+							<div>
+								<label>
+									Parent/Guardian: <input type="text" name="parent">
+									Contact Phone: <input type="tel" name="telephone">
+									Contact Email: <input type="email" name="email">
+								</label>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend class="subtitles">Which elementary schools do you live near? </legend>
+							<label>
+								<div>
+									First Closest School:
+										<p><input type="checkbox" name="firstClosestSchool"> AJ Katzenmaier <input type="checkbox" name="firstClosestSchool">Marjorie P Hart</p>
+										<p><input type="checkbox" name="firstClosestSchool"> Greenbay <input type="checkbox" name="firstClosestSchool"> North Elementary</p>
+										<p><input type="checkbox" name="firstClosestSchool"> Howard A Yeager<input type="checkbox" name="firstClosestSchool"> South Elementary</p>
+								</div>
+									Second Closest School:
+								<div>
+										<p><input type="checkbox" name="secondClosestSchool"> AJ Katzenmaier <input type="checkbox" name="secondClosestSchool">Marjorie P Hart</p>
+										<p><input type="checkbox" name="secondClosestSchool"> Greenbay <input type="checkbox" name="secondClosestSchool"> North Elementary</p>
+										<p><input type="checkbox" name="secondClosestSchool"> Howard A Yeager<input type="checkbox" name="secondClosestSchool"> South Elementary</p>
+								</div>
+							</label>
+						</fieldset>
+						<fieldset>
+							<div>
+								<legend class="subtitles">What position(s) do you normally play?</legend>
+								<label>
+									<p><input type="checkbox" name="actualPosition"> Forward <input type="checkbox" name="actualPosition">Midfield</p>
+									<p><input type="checkbox" name="actualPosition"> Defense <input type="checkbox" name="actualPosition">Goalkeeper</p>
+								</label>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div>
+								<legend class="subtitles">What position(s) do you want to play?</legend>
+								<label>
+									<p><input type="checkbox" name="wantedPosition"> Forward <input type="checkbox" name="wantedPosition">Midfield</p>
+									<p><input type="checkbox" name="wantedPosition"> Defense <input type="checkbox" name="wantedPosition">Goalkeeper</p>
+								</label>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div>
+								<legend class="subtitles">Already Have a Uniform</legend>
+							</div>
+						</fieldset>
+					</form>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
