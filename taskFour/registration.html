@@ -28,97 +28,138 @@
 						<div id="formBackground">
 							<div id="formContainer">
 								<fieldset class="singleColumn">
-									<legend class="subtitles">Personal Data</legend>
-										<label class="singleColumn">
-											Player’s First Name:<input type="text" name="firstName" placeholder="Enter your name">
-										</label>
-										<label class="singleColumn">
-											Last Name:<input type="text" name="lastName" placeholder="Enter your last name">
-										</label>
-										<label>
-												Street Adress:<input type="text" name="adress" placeholder="Enter the adress where you're living actually">
-										</label>
-										<label>
-												City:<input type="text" name="city" placeholder="Enter the city where you're living actually">
-										</label>
-										<label>
-												Zip Code:<input type="number" name="zipCode" placeholder="Enter the corresponding zip code">
-										</label>
-										
-										<label>
-											Birth Date:<input type="date" name="birthDate" placeholder="mm/dd/yy">
-										</label>
-										<label>
-											Gender:<input type="radio" name="gender"><p>Male</p> <input type="radio" name="gender"><p>Female</p>
-										</label>
-									<label>
-										Grade:
-										<input type="radio" name="grade"><p>Pre-School</p>
-										<input type="radio" name="grade"><p>1ˢᵗ</p>
-										<input type="radio" name="grade"><p>2ⁿᵈ</p>
-										<input type="radio" name="grade"><p>3ʳᵈ</p>
-										<input type="radio" name="grade"><p>4ᵗʰ</p>
-										<input type="radio" name="grade"><p>5ᵗʰ</p>
-									</label>
-										<label>
-											Parent/Guardian: <input type="text" name="parent">
-											Contact Phone: <input type="tel" name="telephone">
-											Contact Email: <input type="email" name="email">
-										</label>
+									<legend class="formSubtitles">Personal Data</legend>
+										<div class="formContent">
+											<label>
+												<span>Player’s First Name:</span><input type="text" name="firstName" placeholder="Enter your name">
+											</label>
+											<label>
+												<span>Last Name:</span><input type="text" name="lastName" placeholder="Enter your last name">
+											</label>
+											<label>
+												<span>Street Adress:</span><input type="text" name="adress" placeholder="Enter the adress where you're living">
+											</label>
+											<label>
+												<span>City:</span><input type="text" name="city" placeholder="Enter the city where you're living">
+											</label>
+											<label>
+												<span>Zip Code:</span><input type="tel" name="zipCode" placeholder="Enter the corresponding zip code">
+											</label>
+											<label>
+												<span>Birth Date:</span><input type="date" name="birthDate" placeholder="mm/dd/yy">
+											</label>
+											<div class="radioLabel">
+												<span>Gender:</span><label><input type="radio" name="gender"><p>Male</p></label> <label><input type="radio" name="gender"><p>Female</p></label>
+											</div>
+											<label>
+												<span>Grade:</span>
+												<input type="radio" name="grade"><p>Pre-School</p>
+												<input type="radio" name="grade"><p>1ˢᵗ</p>
+												<input type="radio" name="grade"><p>2ⁿᵈ</p>
+												<input type="radio" name="grade"><p>3ʳᵈ</p>
+												<input type="radio" name="grade"><p>4ᵗʰ</p>
+												<input type="radio" name="grade"><p>5ᵗʰ</p>
+											</label>
+											<label>
+												<span>Parent/Guardian:</span> <input type="text" name="parent">
+											</label>
+											<label>
+												<span>Contact Phone:</span> <input type="tel" name="telephone">
+											</label>
+											<label class="singleColumn">
+												<span>Contact Email:</span> <input type="email" name="email">
+											</label>
+										</div>
 								</fieldset>
 								<fieldset>
-									<legend class="subtitles">Which elementary schools do you live near? </legend>
+										<legend class="formSubtitles">What position(s) do you normally play?</legend>
+										<div class="formContent">
+												<input type="checkbox" name="actualPosition">Forward
+											</label>
+											<label>
+												<input type="checkbox" name="actualPosition">Midfield
+											</label>
+											<label>
+												<input type="checkbox" name="actualPosition">Defense
+											</label>
+											<label>
+												<input type="checkbox" name="actualPosition">Goalkeeper
+											</label>
+										</div>
+								</fieldset>
+								<fieldset>
+										<legend class="formSubtitles">What position(s) do you want to play?</legend>
+										<div class="formContent">
+											<label>
+												<input type="checkbox" name="wantedPosition">Forward
+											</label>
+											<label>
+												<input type="checkbox" name="wantedPosition">Midfield
+											</label>
+											<label>
+												<input type="checkbox" name="wantedPosition">Defense
+											</label>
+											<label>
+												<input type="checkbox" name="wantedPosition">Goalkeeper
+											</label>
+										</div>
+								</fieldset>
+																<fieldset>
+									<div class="formContent">
+									<legend class="formSubtitles">Which elementary schools do you live near? </legend>
 									<label>
-											First Closest School:
-												<p><input type="checkbox" name="firstClosestSchool"> AJ Katzenmaier <input type="checkbox" name="firstClosestSchool">Marjorie P Hart</p>
+											<p>First Closest School:</p>
+											<select class="checkboxText">
+												<option value="AJ Katzenmaier">AJ Katzenmaier</option>
+												<option value="Greenbay">Greenbay</option>
+												<option value="Marjorie P Hart">Marjorie P Hart</option>
+												<option value="Marjorie P Hart">North Elementary</option>
+												<option value="Marjorie P Hart">Howard A Yeager</option>
+												<option value="Marjorie P Hart">South Elementary</option>
+											</select>
+<!-- 												<p><input type="checkbox" name="firstClosestSchool"> AJ Katzenmaier <input type="checkbox" name="firstClosestSchool">Marjorie P Hart</p>
 												<p><input type="checkbox" name="firstClosestSchool"> Greenbay <input type="checkbox" name="firstClosestSchool"> North Elementary</p>
 												<p><input type="checkbox" name="firstClosestSchool"> Howard A Yeager<input type="checkbox" name="firstClosestSchool"> South Elementary</p>
 											Second Closest School:
 												<p><input type="checkbox" name="secondClosestSchool"> AJ Katzenmaier <input type="checkbox" name="secondClosestSchool">Marjorie P Hart</p>
 												<p><input type="checkbox" name="secondClosestSchool"> Greenbay <input type="checkbox" name="secondClosestSchool"> North Elementary</p>
-												<p><input type="checkbox" name="secondClosestSchool"> Howard A Yeager<input type="checkbox" name="secondClosestSchool"> South Elementary</p>
+												<p><input type="checkbox" name="secondClosestSchool"> Howard A Yeager<input type="checkbox" name="secondClosestSchool"> South Elementary</p> -->
+											
 									</label>
+									</div>
 								</fieldset>
 								<fieldset>
-										<legend class="subtitles">What position(s) do you normally play?</legend>
+										<legend class="formSubtitles">Already Have a Uniform</legend>
+										<div class="formContent">
+											<label>
+												<p><input type="checkbox" name="uniformConfirmation">I do<input type="checkbox" name="uniformConfirmation">I do not</p>
+											</label>
+										</div>
+								</fieldset>
+								<fieldset>
+									<legend class="formSubtitles">Jersey Size</legend>
+									<div class="formContent">
 										<label>
-											<p><input type="checkbox" name="actualPosition"> Forward <input type="checkbox" name="actualPosition">Midfield</p>
-											<p><input type="checkbox" name="actualPosition"> Defense <input type="checkbox" name="actualPosition">Goalkeeper</p>
+											<p><input type="checkbox" name="jerseySize"> Youth Small <input type="checkbox" name="jerseySize">Youth Medium</p>
+											<p><input type="checkbox" name="jerseySize"> Youth Large <input type="checkbox" name="jerseySize">Small</p>
+											<p><input type="checkbox" name="jerseySize"> Medium <input type="checkbox" name="jerseySize">Large</p>
+											<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
 										</label>
+									</div>
 								</fieldset>
 								<fieldset>
-										<legend class="subtitles">What position(s) do you want to play?</legend>
+									<legend class="formSubtitles">Shorts Size</legend>
+									<div class="formContent">
 										<label>
-											<p><input type="checkbox" name="wantedPosition"> Forward <input type="checkbox" name="wantedPosition">Midfield</p>
-											<p><input type="checkbox" name="wantedPosition"> Defense <input type="checkbox" name="wantedPosition">Goalkeeper</p>
+											<p><input type="checkbox" name="jerseySize"> Youth Small <input type="checkbox" name="jerseySize">Youth Medium</p>
+											<p><input type="checkbox" name="jerseySize"> Youth Large <input type="checkbox" name="jerseySize">Small</p>
+											<p><input type="checkbox" name="jerseySize"> Medium <input type="checkbox" name="jerseySize">Large</p>
+											<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
 										</label>
-								</fieldset>
-								<fieldset>
-										<legend class="subtitles">Already Have a Uniform</legend>
-										<label>
-											<p><input type="checkbox" name="uniformConfirmation">I do<input type="checkbox" name="uniformConfirmation">I do not</p>
-										</label>
-								</fieldset>
-								<fieldset>
-									<legend class="subtitles">Jersey Size</legend>
-									<label>
-										<p><input type="checkbox" name="jerseySize"> Youth Small <input type="checkbox" name="jerseySize">Youth Medium</p>
-										<p><input type="checkbox" name="jerseySize"> Youth Large <input type="checkbox" name="jerseySize">Small</p>
-										<p><input type="checkbox" name="jerseySize"> Medium <input type="checkbox" name="jerseySize">Large</p>
-										<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
-									</label>
-								</fieldset>
-								<fieldset>
-									<legend class="subtitles">Shorts Size</legend>
-									<label>
-										<p><input type="checkbox" name="jerseySize"> Youth Small <input type="checkbox" name="jerseySize">Youth Medium</p>
-										<p><input type="checkbox" name="jerseySize"> Youth Large <input type="checkbox" name="jerseySize">Small</p>
-										<p><input type="checkbox" name="jerseySize"> Medium <input type="checkbox" name="jerseySize">Large</p>
-										<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
-									</label>
+									</div>
 								</fieldset>
 								<fieldset class="singleColumn">
-									<legend class="subtitles">Permission to Play</legend>
+									<legend class="formSubtitles">Permission to Play</legend>
 									<label>
 										<p class="justifiedText">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
 										Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
