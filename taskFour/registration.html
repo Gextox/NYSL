@@ -61,19 +61,20 @@
 												<input type="radio" name="grade"><p>5ᵗʰ</p>
 											</label>
 											<label>
-												<span>Parent/Guardian:</span> <input type="text" name="parent">
+												<span>Parent/Guardian:</span> <input type="text" name="parent" placeholder="Enter the name of your parent/guardian">
 											</label>
 											<label>
-												<span>Contact Phone:</span> <input type="tel" name="telephone">
+												<span>Contact Phone:</span> <input type="tel" name="telephone" placeholder="Enter your telephone number" >
 											</label>
 											<label class="singleColumn">
-												<span>Contact Email:</span> <input type="email" name="email">
+												<span>Contact Email:</span> <input type="email" name="email" placeholder="Enter your e-mail address">
 											</label>
 										</div>
 								</fieldset>
 								<fieldset>
 										<legend class="formSubtitles">What position(s) do you normally play?</legend>
 										<div class="formContent">
+											<label>
 												<input type="checkbox" name="actualPosition">Forward
 											</label>
 											<label>
@@ -104,11 +105,11 @@
 											</label>
 										</div>
 								</fieldset>
-																<fieldset>
-									<div class="formContent">
+								<fieldset>
 									<legend class="formSubtitles">Which elementary schools do you live near? </legend>
-									<label>
-											<p>First Closest School:</p>
+									<div class="formContent">
+										<label class="singleColumn">
+											<span>First Closest School:</span>
 											<select class="checkboxText">
 												<option value="AJ Katzenmaier">AJ Katzenmaier</option>
 												<option value="Greenbay">Greenbay</option>
@@ -117,22 +118,28 @@
 												<option value="Marjorie P Hart">Howard A Yeager</option>
 												<option value="Marjorie P Hart">South Elementary</option>
 											</select>
-<!-- 												<p><input type="checkbox" name="firstClosestSchool"> AJ Katzenmaier <input type="checkbox" name="firstClosestSchool">Marjorie P Hart</p>
-												<p><input type="checkbox" name="firstClosestSchool"> Greenbay <input type="checkbox" name="firstClosestSchool"> North Elementary</p>
-												<p><input type="checkbox" name="firstClosestSchool"> Howard A Yeager<input type="checkbox" name="firstClosestSchool"> South Elementary</p>
-											Second Closest School:
-												<p><input type="checkbox" name="secondClosestSchool"> AJ Katzenmaier <input type="checkbox" name="secondClosestSchool">Marjorie P Hart</p>
-												<p><input type="checkbox" name="secondClosestSchool"> Greenbay <input type="checkbox" name="secondClosestSchool"> North Elementary</p>
-												<p><input type="checkbox" name="secondClosestSchool"> Howard A Yeager<input type="checkbox" name="secondClosestSchool"> South Elementary</p> -->
-											
-									</label>
+										</label>
+										<label class="singleColumn">
+											<span>Second Closest School:</span>
+											<select class="checkboxText">
+												<option value="AJ Katzenmaier">AJ Katzenmaier</option>
+												<option value="Greenbay">Greenbay</option>
+												<option value="Marjorie P Hart">Marjorie P Hart</option>
+												<option value="Marjorie P Hart">North Elementary</option>
+												<option value="Marjorie P Hart">Howard A Yeager</option>
+												<option value="Marjorie P Hart">South Elementary</option>
+											</select>
+										</label>
 									</div>
 								</fieldset>
 								<fieldset>
-										<legend class="formSubtitles">Already Have a Uniform</legend>
+										<legend class="formSubtitles">Already Have an Uniform</legend>
 										<div class="formContent">
 											<label>
-												<p><input type="checkbox" name="uniformConfirmation">I do<input type="checkbox" name="uniformConfirmation">I do not</p>
+												<p><input type="checkbox" name="uniformConfirmation">I do</p>
+											</label>
+											<label>
+												<p><input type="checkbox" name="uniformConfirmation">I do not</p>
 											</label>
 										</div>
 								</fieldset>
@@ -140,9 +147,24 @@
 									<legend class="formSubtitles">Jersey Size</legend>
 									<div class="formContent">
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Youth Small <input type="checkbox" name="jerseySize">Youth Medium</p>
-											<p><input type="checkbox" name="jerseySize"> Youth Large <input type="checkbox" name="jerseySize">Small</p>
-											<p><input type="checkbox" name="jerseySize"> Medium <input type="checkbox" name="jerseySize">Large</p>
+											<p><input type="checkbox" name="jerseySize"> Youth Small </p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize">Youth Medium</p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize"> Youth Large </p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize">Small</p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize"> Medium </p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize">Large</p>
+										</label>
+										<label>
 											<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
 										</label>
 									</div>
@@ -151,16 +173,30 @@
 									<legend class="formSubtitles">Shorts Size</legend>
 									<div class="formContent">
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Youth Small <input type="checkbox" name="jerseySize">Youth Medium</p>
-											<p><input type="checkbox" name="jerseySize"> Youth Large <input type="checkbox" name="jerseySize">Small</p>
-											<p><input type="checkbox" name="jerseySize"> Medium <input type="checkbox" name="jerseySize">Large</p>
+											<p><input type="checkbox" name="jerseySize"> Youth Small </p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize">Youth Medium</p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize"> Youth Large</p>
+										</label> 
+										<label>
+											<p><input type="checkbox" name="jerseySize">Small</p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize"> Medium </p>
+										</label>
+										<label>
+											<p><input type="checkbox" name="jerseySize">Large</p>
+										</label>
+										<label class="singleColumn">
 											<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
 										</label>
 									</div>
 								</fieldset>
 								<fieldset class="singleColumn">
 									<legend class="formSubtitles">Permission to Play</legend>
-									<label>
 										<p class="justifiedText">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
 										Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
 										accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
@@ -168,8 +204,17 @@
 										on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
 										sponsored activities, which transportation.
 										By fullfilling the content below, I hereby agree and authorize the above. In addition, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
-										<h6>Parent/Guardian Full Name: <input type="text" name="signName"> ID Card:<input type="text" name="signID"> Date: <input type="date" name="signDate"></h6>
-									</label>
+									<div class="formContent">
+										<label class="singleColumn">
+											<span>Parent/Guardian Full Name:</span><input type="text" name="signName" placeholder="Enter the full name of your parent/guardian">
+										</label>
+										<label class="singleColumn">
+											<span>ID Card:</span><input type="text" name="signID" placeholder="Enter your ID Card"> 
+										</label>
+										<label class="singleColumn">
+											<span>Date: </span><input type="date" name="signDate">
+										</label>
+									</div>
 								</fieldset>
 								<fieldset>
 									<input type="submit" name="submitButton">
