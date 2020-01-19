@@ -24,9 +24,9 @@
 			<h2 class="textFormat">Registration Form</h2>
 			<div style="overflow: auto"> <!-- A causa de que el float del nav y del main sobrepasaban espacio en el body -->
 				<main> <!-- Tenía un section, pero por el formato de la pág no tengo un subtitulo para utilizar (el p podría ser h6...) -->
-					<form action="data/show_data.txt" method="get">
-						<div id="formBackground">
-							<div id="formContainer">
+					<form action="show_data.html" method="get">
+						<div class="formBackground">
+							<div class="formContainer">
 								<fieldset class="singleColumn">
 									<legend class="formSubtitles">Personal Data</legend>
 										<div class="formContent">
@@ -49,34 +49,34 @@
 												<span>Birth Date:</span><input type="date" name="birthDate">
 											</label>
 											<div class="radioLabel">
-												<span>Gender:</span><label><input type="radio" name="gender">Male</label> <label><input type="radio" name="gender">Female</label>
+												<span>Gender:</span><label><input type="radio" name="gender" value="Male">Male</label> <label><input type="radio" name="gender" value="Female">Female</label><label><input type="radio" name="gender" value="Other">Other</label>
 											</div>
 											<div class="radioLabel">
 												<span>Grade:</span>
 												<label>
-													<input type="radio" name="grade">Pre-School
+													<input type="radio" name="grade" value="Pre-School">Pre-School
 												</label>
 												<label>
-													<input type="radio" name="grade">1ˢᵗ
+													<input type="radio" name="grade" value="First">1ˢᵗ
 												</label>
 												<label>
-													<input type="radio" name="grade">2ⁿᵈ
+													<input type="radio" name="grade" value="Second">2ⁿᵈ
 												</label>
 												<label>
-													<input type="radio" name="grade">3ʳᵈ
+													<input type="radio" name="grade" value="Third">3ʳᵈ
 												</label>
 												<label>
-													<input type="radio" name="grade">4ᵗ
+													<input type="radio" name="grade" value="Fourth">4ᵗ
 												</label>
 												<label>
-													<input type="radio" name="grade">5ᵗʰ
+													<input type="radio" name="grade" value="Fifth">5ᵗʰ
 												</label>
 											</div>
 											<label>
 												<span>Parent/Guardian:</span> <input type="text" name="parent" placeholder="Enter the name of your parent/guardian">
 											</label>
 											<label>
-												<span>Contact Phone:</span> <input type="tel" name="telephone" placeholder="Enter your telephone number" >
+												<span>Contact Phone:</span> <input type="tel" name="telephone" placeholder="Enter your telephone number">
 											</label>
 											<label class="singleColumn">
 												<span>Contact Email:</span> <input type="email" name="email" placeholder="Enter your e-mail address">
@@ -87,16 +87,16 @@
 										<legend class="formSubtitles">What position(s) do you normally play?</legend>
 										<div class="formContent">
 											<label>
-												<input type="checkbox" name="actualPosition">Forward
+												<input type="Checkbox" name="actualPosition" value="Forward">Forward
 											</label>
 											<label>
-												<input type="checkbox" name="actualPosition">Midfield
+												<input type="checkbox" name="actualPosition" value="Midfield">Midfield
 											</label>
 											<label>
-												<input type="checkbox" name="actualPosition">Defense
+												<input type="checkbox" name="actualPosition" value="Defense">Defense
 											</label>
 											<label>
-												<input type="checkbox" name="actualPosition">Goalkeeper
+												<input type="checkbox" name="actualPosition" value="Goalkeeper">Goalkeeper
 											</label>
 										</div>
 								</fieldset>
@@ -104,16 +104,16 @@
 										<legend class="formSubtitles">What position(s) do you want to play?</legend>
 										<div class="formContent">
 											<label>
-												<input type="checkbox" name="wantedPosition">Forward
+												<input type="checkbox" name="wantedPosition" value="Forward">Forward
 											</label>
 											<label>
-												<input type="checkbox" name="wantedPosition">Midfield
+												<input type="checkbox" name="wantedPosition" value="Midfield">Midfield
 											</label>
 											<label>
-												<input type="checkbox" name="wantedPosition">Defense
+												<input type="checkbox" name="wantedPosition" value="Defense">Defense
 											</label>
 											<label>
-												<input type="checkbox" name="wantedPosition">Goalkeeper
+												<input type="checkbox" name="wantedPosition" value="Goalkeeper">Goalkeeper
 											</label>
 										</div>
 								</fieldset>
@@ -122,7 +122,8 @@
 									<div class="formContent">
 										<label class="singleColumn">
 											<span>First Closest School:</span>
-											<select class="checkboxText">
+											<select class="checkboxText" name="FirstNearSchool">
+												<option value="No near school selected">Enter your first near school</option>
 												<option value="AJ Katzenmaier">AJ Katzenmaier</option>
 												<option value="Greenbay">Greenbay</option>
 												<option value="Marjorie P Hart">Marjorie P Hart</option>
@@ -133,7 +134,8 @@
 										</label>
 										<label class="singleColumn">
 											<span>Second Closest School:</span>
-											<select class="checkboxText">
+											<select class="checkboxText" name="SecondNearSchool">
+												<option value="No near school selected">Enter your second near school</option>
 												<option value="AJ Katzenmaier">AJ Katzenmaier</option>
 												<option value="Greenbay">Greenbay</option>
 												<option value="Marjorie P Hart">Marjorie P Hart</option>
@@ -148,10 +150,10 @@
 										<legend class="formSubtitles">Already Have an Uniform</legend>
 										<div class="formContent">
 											<label>
-												<input type="checkbox" name="uniformConfirmation">I do
+												<input type="radio" name="uniformConfirmation" value="Has an uniform">I do
 											</label>
 											<label>
-												<input type="checkbox" name="uniformConfirmation">I do not
+												<input type="radio" name="uniformConfirmation" value="Has not an uniform">I do not
 											</label>
 										</div>
 								</fieldset>
@@ -159,25 +161,25 @@
 									<legend class="formSubtitles">Jersey Size</legend>
 									<div class="formContent">
 										<label>
-											<input type="checkbox" name="jerseySize"> Youth Small 
+											<input type="checkbox" name="jerseySize" value="Youth Small"> Youth Small 
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize">Youth Medium
+											<input type="checkbox" name="jerseySize" value="Youth Medium">Youth Medium
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize"> Youth Large
+											<input type="checkbox" name="jerseySize" value="Youth Large"> Youth Large
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize">Small
+											<input type="checkbox" name="jerseySize" value="Small">Small
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize"> Medium
+											<input type="checkbox" name="jerseySize" value="Medium"> Medium
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize">Large
+											<input type="checkbox" name="jerseySize" value="Large">Large
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize"> Extra-Large
+											<input type="checkbox" name="jerseySize" value="Extra-Large"> Extra-Large
 										</label>
 									</div>
 								</fieldset>
@@ -185,25 +187,25 @@
 									<legend class="formSubtitles">Shorts Size</legend>
 									<div class="formContent">
 										<label>
-											<input type="checkbox" name="jerseySize"> Youth Small
+											<input type="checkbox" name="shortsSize" value="Youth Small"> Youth Small
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize">Youth Medium
+											<input type="checkbox" name="shortsSize" value="Yout Medium">Youth Medium
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize"> Youth Large
+											<input type="checkbox" name="shortsSize" value="Youth Large"> Youth Large
 										</label> 
 										<label>
-											<input type="checkbox" name="jerseySize">Small
+											<input type="checkbox" name="shortsSize" value="Small">Small
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize"> Medium
+											<input type="checkbox" name="shortsSize" value="Medium"> Medium
 										</label>
 										<label>
-											<input type="checkbox" name="jerseySize">Large
+											<input type="checkbox" name="shortsSize" value="Large">Large
 										</label>
 										<label class="singleColumn">
-											<input type="checkbox" name="jerseySize"> Extra-Large
+											<input type="checkbox" name="shortsSize" value="Extra-Large"> Extra-Large
 										</label>
 									</div>
 								</fieldset>
@@ -221,7 +223,7 @@
 											<span>Parent/Guardian Full Name:</span><input type="text" name="signName" placeholder="Enter the full name of your parent/guardian">
 										</label>
 										<label class="singleColumn">
-											<span>ID Card:</span><input type="text" name="signID" placeholder="Enter your ID Card"> 
+											<span>ID Card:</span><input type="text" name="signId" placeholder="Enter your ID Card"> 
 										</label>
 										<label class="singleColumn">
 											<span>Date: </span><input type="date" name="signDate">
@@ -230,7 +232,7 @@
 								</fieldset>
 								<fieldset class="singleColumn">
 									<div >
-										<input type="submit" name="submitButton" class="submitButtonWrapper">
+										<input type="submit" class="submitButtonWrapper">
 									</div>
 								</fieldset>
 							</div>

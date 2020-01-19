@@ -69,6 +69,17 @@ h2
 	margin-top: var(--bannerHeight);
 	margin-bottom: 2vh;
 }
+h4{
+	background: #1c1c1c;
+	text-align: center;
+	font-size: 2.5vw; /* se ve muy grande en mobile? */
+	margin: 0em;
+	-webkit-border-radius: 79px 79px 79px 79px;
+	border: var(--borderSize) solid var(--borderColor);
+	
+	margin-top: var(--bannerHeight);
+	margin-bottom: 2vh;
+}
 
 nav
 {
@@ -379,7 +390,7 @@ input:focus, select:focus
 }
 
 
-#formBackground
+.formBackground
 {
 	margin-top: 5vh;
 	margin-bottom: 2vh;
@@ -389,7 +400,7 @@ input:focus, select:focus
 }
 
 
-#formContainer{
+.formContainer{
 	padding: 2vh 4vw;
 	display: grid;
 	grid-template-columns: 38vw 38vw; /*TENER EN CUENTA SCROLL*/
@@ -447,5 +458,8 @@ label>span, .radioLabel>span
 	font-size: 1.6em;
 	text-align: left;
 	font-weight: bolder;
+	display: inline;
+}
+#show_data_table{
 	display: inline;
 }
