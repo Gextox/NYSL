@@ -23,8 +23,8 @@
 			</header>
 			<h2 class="textFormat">Registration Form</h2>
 			<div style="overflow: auto"> <!-- A causa de que el float del nav y del main sobrepasaban espacio en el body -->
-				<main #mainRegistration> <!-- Tenía un section, pero por el formato de la pág no tengo un subtitulo para utilizar (el p podría ser h6...) -->
-					<form action="data/show_data">
+				<main> <!-- Tenía un section, pero por el formato de la pág no tengo un subtitulo para utilizar (el p podría ser h6...) -->
+					<form action="data/show_data.txt" method="get">
 						<div id="formBackground">
 							<div id="formContainer">
 								<fieldset class="singleColumn">
@@ -46,20 +46,32 @@
 												<span>Zip Code:</span><input type="tel" name="zipCode" placeholder="Enter the corresponding zip code">
 											</label>
 											<label>
-												<span>Birth Date:</span><input type="date" name="birthDate" placeholder="mm/dd/yy">
+												<span>Birth Date:</span><input type="date" name="birthDate">
 											</label>
 											<div class="radioLabel">
-												<span>Gender:</span><label><input type="radio" name="gender"><p>Male</p></label> <label><input type="radio" name="gender"><p>Female</p></label>
+												<span>Gender:</span><label><input type="radio" name="gender">Male</label> <label><input type="radio" name="gender">Female</label>
 											</div>
-											<label>
+											<div class="radioLabel">
 												<span>Grade:</span>
-												<input type="radio" name="grade"><p>Pre-School</p>
-												<input type="radio" name="grade"><p>1ˢᵗ</p>
-												<input type="radio" name="grade"><p>2ⁿᵈ</p>
-												<input type="radio" name="grade"><p>3ʳᵈ</p>
-												<input type="radio" name="grade"><p>4ᵗʰ</p>
-												<input type="radio" name="grade"><p>5ᵗʰ</p>
-											</label>
+												<label>
+													<input type="radio" name="grade">Pre-School
+												</label>
+												<label>
+													<input type="radio" name="grade">1ˢᵗ
+												</label>
+												<label>
+													<input type="radio" name="grade">2ⁿᵈ
+												</label>
+												<label>
+													<input type="radio" name="grade">3ʳᵈ
+												</label>
+												<label>
+													<input type="radio" name="grade">4ᵗ
+												</label>
+												<label>
+													<input type="radio" name="grade">5ᵗʰ
+												</label>
+											</div>
 											<label>
 												<span>Parent/Guardian:</span> <input type="text" name="parent" placeholder="Enter the name of your parent/guardian">
 											</label>
@@ -136,10 +148,10 @@
 										<legend class="formSubtitles">Already Have an Uniform</legend>
 										<div class="formContent">
 											<label>
-												<p><input type="checkbox" name="uniformConfirmation">I do</p>
+												<input type="checkbox" name="uniformConfirmation">I do
 											</label>
 											<label>
-												<p><input type="checkbox" name="uniformConfirmation">I do not</p>
+												<input type="checkbox" name="uniformConfirmation">I do not
 											</label>
 										</div>
 								</fieldset>
@@ -147,25 +159,25 @@
 									<legend class="formSubtitles">Jersey Size</legend>
 									<div class="formContent">
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Youth Small </p>
+											<input type="checkbox" name="jerseySize"> Youth Small 
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize">Youth Medium</p>
+											<input type="checkbox" name="jerseySize">Youth Medium
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Youth Large </p>
+											<input type="checkbox" name="jerseySize"> Youth Large
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize">Small</p>
+											<input type="checkbox" name="jerseySize">Small
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Medium </p>
+											<input type="checkbox" name="jerseySize"> Medium
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize">Large</p>
+											<input type="checkbox" name="jerseySize">Large
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
+											<input type="checkbox" name="jerseySize"> Extra-Large
 										</label>
 									</div>
 								</fieldset>
@@ -173,25 +185,25 @@
 									<legend class="formSubtitles">Shorts Size</legend>
 									<div class="formContent">
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Youth Small </p>
+											<input type="checkbox" name="jerseySize"> Youth Small
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize">Youth Medium</p>
+											<input type="checkbox" name="jerseySize">Youth Medium
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Youth Large</p>
+											<input type="checkbox" name="jerseySize"> Youth Large
 										</label> 
 										<label>
-											<p><input type="checkbox" name="jerseySize">Small</p>
+											<input type="checkbox" name="jerseySize">Small
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize"> Medium </p>
+											<input type="checkbox" name="jerseySize"> Medium
 										</label>
 										<label>
-											<p><input type="checkbox" name="jerseySize">Large</p>
+											<input type="checkbox" name="jerseySize">Large
 										</label>
 										<label class="singleColumn">
-											<p><input type="checkbox" name="jerseySize"> Extra-Large</p>
+											<input type="checkbox" name="jerseySize"> Extra-Large
 										</label>
 									</div>
 								</fieldset>
@@ -216,8 +228,10 @@
 										</label>
 									</div>
 								</fieldset>
-								<fieldset>
-									<input type="submit" name="submitButton">
+								<fieldset class="singleColumn">
+									<div >
+										<input type="submit" name="submitButton" class="submitButtonWrapper">
+									</div>
 								</fieldset>
 							</div>
 						</div>
