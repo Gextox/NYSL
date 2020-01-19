@@ -1,0 +1,22 @@
+Nuestro cliente, el señor Tom Denton,
+Nos planteo su problematica principal 
+la cual era de su sistema de informacion 
+el cual ya estaba obsoleto  
+nos solicito para realizar una pagina web sobre sobre su liga juvenil de futbol ( NYSL ).
+
+En un principio, la idea era realizar una pagina sencilla en HTML
+sin diseño que cuente con 
+informacion basica de la liga, sus proximos eventos y algunos contactos, algo rapido
+
+Poco tiempo despues de esto, Tom nos pidio estilo para la pagina,
+el cual fue agregado mediante CSS.
+
+tras elegir uno de los diseños presentados, fuimos requeridos para implementar
+la informacion de los partidos y las reglas de la liga. 
+Para esto fue necesario el uso de tablas y listas anidadas.
+
+Por ultimo, nuestro cliente nos informo de que varios padres tenian problemas
+para llegar a la ubicacion de los partidos, por lo que tuvimos que insertar los mapas 
+con estas. Y ademas, un formulario de registro para reducir el uso de papeles.
+
+
